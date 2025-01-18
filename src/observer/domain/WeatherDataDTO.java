@@ -1,4 +1,4 @@
-package observer;
+package observer.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,8 +1,10 @@
-package observer;
+package observer.subject.impl;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import observer.Observer;
+import observer.subject.Subject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,22 +12,22 @@ import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
-public class WeatherData implements Subject {
+public class WeatherDataSubject implements Subject {
     private float temperature;
     private float humidity;
     private float pressure;
-    private float heatindex;
+    private float heatIndex;
     private List<Observer> observers;
 
-    public WeatherData() {
+    public WeatherDataSubject() {
         observers = new ArrayList<>();
     }
 
-    public WeatherData(float temperature, float humidity, float pressure) {
+    public WeatherDataSubject(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        this.heatindex = computeHeatIndex(temperature, humidity);
+        this.heatIndex = computeHeatIndex(temperature, humidity);
     }
 
     @Override

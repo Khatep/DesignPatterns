@@ -1,12 +1,13 @@
-package observer.displays;
+package observer.displays.impl;
 
 import lombok.AllArgsConstructor;
 import observer.Observer;
-import observer.WeatherData;
+import observer.subject.impl.WeatherDataSubject;
+import observer.displays.Display;
 
 @AllArgsConstructor
 public class StatisticsDisplay implements Observer, Display {
-    private WeatherData weatherData;
+    private WeatherDataSubject weatherDataSubject;
     @Override
     public void update() {
 

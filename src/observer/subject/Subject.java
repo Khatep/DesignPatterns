@@ -1,4 +1,6 @@
-package observer;
+package observer.subject;
+
+import observer.Observer;
 
 public interface Subject {
     void registerObserver(Observer observer);
