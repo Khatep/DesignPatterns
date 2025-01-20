@@ -1,9 +1,9 @@
-package observer.displays.impl;
+package observer.observers.displays.impl;
 
 import lombok.AllArgsConstructor;
 import observer.Observer;
 import observer.subject.impl.WeatherDataSubject;
-import observer.displays.Display;
+import observer.observers.displays.Display;
 
 @AllArgsConstructor
 public class StatisticsDisplay implements Observer, Display {
