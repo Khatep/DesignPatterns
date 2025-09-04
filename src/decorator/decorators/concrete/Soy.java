@@ -10,8 +10,8 @@ import java.math.BigDecimal;
 @Getter
 public class Soy extends CondimentDecorator {
 
-    protected Soy(Beverage beverage, String description, BigDecimal cost, Size size) {
-        super(beverage, description, cost, size);
+    protected Soy(Beverage beverage, String description, BigDecimal cost) {
+            super(beverage, description, cost);
     }
 
     @Override

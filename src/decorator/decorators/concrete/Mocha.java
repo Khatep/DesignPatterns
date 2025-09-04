@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 public class Mocha extends CondimentDecorator {
 
     public Mocha(Beverage beverage, String description, BigDecimal cost) {
-        super(beverage, description, cost, beverage.getSize());
+        super(beverage, description, cost);
     }
 
     @Override

@@ -11,8 +11,8 @@ public abstract class CondimentDecorator extends Beverage {
     @Getter
     private final Beverage beverage;
 
-    protected CondimentDecorator(Beverage beverage, String description, BigDecimal cost, Size size) {
-        super(description, cost, size);
+    protected CondimentDecorator(Beverage beverage, String description, BigDecimal cost) {
+        super(description, cost, beverage.getSize());
         this.beverage = beverage;
     }
 }

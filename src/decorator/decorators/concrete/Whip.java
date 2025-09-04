@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 public class Whip extends CondimentDecorator {
 
     public Whip(Beverage beverage, String description, BigDecimal cost) {
-        super(beverage, description, cost, beverage.getSize());
+        super(beverage, description, cost);
     }
 
     @Override
