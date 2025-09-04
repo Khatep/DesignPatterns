@@ -1,4 +1,4 @@
-package decorator.decorators.impl;
+package decorator.decorators.concrete;
 
 import decorator.components.Beverage;
 import decorator.decorators.CondimentDecorator;

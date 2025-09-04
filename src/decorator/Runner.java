@@ -1,8 +1,8 @@
 package decorator;
 
-import decorator.components.Espresso;
-import decorator.decorators.impl.Mocha;
-import decorator.decorators.impl.Whip;
+import decorator.components.concrete.Espresso;
+import decorator.decorators.concrete.Mocha;
+import decorator.decorators.concrete.Whip;
 import decorator.components.Beverage;
 import decorator.domain.enums.Size;
 import lombok.extern.slf4j.Slf4j;

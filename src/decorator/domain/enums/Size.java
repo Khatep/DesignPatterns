@@ -10,6 +10,7 @@ public enum Size {
     LARGE(new BigDecimal("1.4"));
 
     private final BigDecimal value;
+
     Size(BigDecimal value) {
         this.value = value;
     }
