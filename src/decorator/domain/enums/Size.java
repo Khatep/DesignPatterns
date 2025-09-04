@@ -1,4 +1,4 @@
-package decorator.domain;
+package decorator.domain.enums;
 
 import lombok.Getter;
 import java.math.BigDecimal;

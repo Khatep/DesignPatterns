@@ -1,8 +1,8 @@
 package decorator.decorators.impl;
 
-import decorator.Beverage;
+import decorator.components.Beverage;
 import decorator.decorators.CondimentDecorator;
-import decorator.domain.Size;
+import decorator.domain.enums.Size;
 import lombok.Getter;
 
 import java.math.BigDecimal;
@@ -10,11 +10,13 @@ import java.math.BigDecimal;
 @Getter
 public class Soy extends CondimentDecorator {
 
-    private final Beverage beverage;
-
     protected Soy(Beverage beverage, String description, BigDecimal cost, Size size) {
-        super(description, cost, size);
-        this.beverage = beverage;
+        super(beverage, description, cost, size);
+    }
+
+    @Override
+    public String getDescription() {
+        return super.getBeverage().getDescription() + ", " + super.description;
     }
 
     @Override

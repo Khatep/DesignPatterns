@@ -1,7 +1,6 @@
 package decorator.components;
 
-import decorator.Beverage;
-import decorator.domain.Size;
+import decorator.domain.enums.Size;
 
 import java.math.BigDecimal;
 
